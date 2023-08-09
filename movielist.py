@@ -2,13 +2,18 @@
 others = ["convent", "mr.robot", "american hustle"]
 
 
-movielist = ["happy death day" , "get out"]
+movielist = []
+
 def seen():
     movielist.pop(0)
 
 def choiser():
     movielist.insert(0, others[0])
+    others.pop(0)
 
+def change():
+    seen()
+    choiser()
 
 
 movielist.insert(0, "portrait of a lady on fire")
